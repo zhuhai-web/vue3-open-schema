@@ -4,11 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
-    "dev:test": "vue-cli-service serve --mode testa",
-    "dev:prod": "vue-cli-service serve --mode prod",
-    "build": "npm run build:prod",
-    "build:test": "vue-cli-service build --mode testa",
-    "build:prod": "vue-cli-service build --mode prod"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "@varlet/ui": "^1.27.20",
