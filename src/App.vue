@@ -3,7 +3,8 @@
     <van-nav-bar title="Open Schema" fixed placeholder></van-nav-bar>
     <div class="form-con">
       <div>Please Enter Schema:</div>
-      <van-field placeholder="Please Enter Schema" class="txt-field" v-model="schemaTxt"></van-field>
+      <van-field placeholder="Please Enter Schema" class="txt-field" v-model="schemaTxt"
+                 type="textarea" rows="10"></van-field>
       <van-button @click="onJumpClick" type="primary" class="jump-btn">Jump</van-button>
       <van-button @click="onResetClick" type="default" class="jump-btn">Reset</van-button>
     </div>
@@ -38,7 +39,6 @@
     }
 
     .txt-field {
-      min-height: 160px;
       margin: 16px 0;
     }
 
@@ -46,6 +46,7 @@
   }
 
   #app {
+    -webkit-overflow-scrolling: touch;
     background-color: #f7f7f7;
     height: 100vh;
     overflow-y: hidden;
